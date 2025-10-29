@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projeto</title>
+</head>
+<body>
+    <h1>Notas rápidas</h1>
+    <label for="nota">Insira sua nota:</label> <br>
+    <input type="text" id="nota"> <br>
+    <input type="radio" id="urgente" name="urgencia" value="urg">Urgente <br>
+    <input type="radio" id="nurgente" name="urgencia" value="nurg">Não Urgente <br><br>
+    <input type="button" value="Adicionar" onclick="adicionarnota()">
+
+    <div id="listanurg">
+        <p>Não Urgentes</p>
+        <ul id="notasnurg">
+        </ul>
+        <div class="botoes">
+            <input type="button" value="Apagar Última Nota" onclick="apagarnotanurg()">
+            <input type="button" value="Apagar Tudo" onclick="apagartudonurg()">
+        </div>
+    </div>
+
+    <div id="listaurg">
+        <p>Urgentes</p>
+        <ul id="notasurg">
+        </ul>
+        <div class="botoes">
+            <input type="button" value="Apagar Última Nota" onclick="apagarnotaurg()">
+            <input type="button" value="Apagar Tudo" onclick="apagartudourg()">
+        </div>
+    </div>
+    
+</body>
+</html>
