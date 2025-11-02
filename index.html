@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Projeto</title>
     <script type="text/javascript" src="js/projeto.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="nova">
     <h1>Notas rápidas</h1>
     <label for="nota">Insira sua nota:</label> <br>
     <input type="text" id="nota"> <br>
     <input type="radio" name="urgencia" value="urg">Urgente <br>
     <input type="radio" name="urgencia" value="nurg">Não Urgente <br><br>
     <input type="button" value="Adicionar" onclick="adicionarnota()">
+</div>
 
+    <div id="listas">
     <div id="listanurg">
         <p>Não Urgentes</p>
         <ul id="notasnurg">
@@ -29,6 +33,7 @@
         </ul>
 
         <input type="button" value="Apagar Última Nota" onclick="apagarnotaurg()">
+    </div>
     </div>
     
             <input type="button" value="Apagar tudo" onclick="apagartudo()">

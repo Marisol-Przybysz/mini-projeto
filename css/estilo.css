@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    align-items: center;
+    background-image: url(../v602-nunoon-32-rippednotes.jpg);
+    background-size: cover;
+}
+#listanurg{
+    background-color: white;
+    border: 5px solid rgb(255, 238, 0);
+    border-radius: 30px;
+    margin: 0;
+    padding: 2%;
+    box-shadow: 0 0 10px #636363;
+    text-align: left;
+    height: auto;
+    min-height: 35vh;
+    display: flex;    
+    flex-direction: column;   
+    justify-content: space-between;
+
+}
+#listaurg{
+    background-color: white;
+    border: 5px solid rgb(216, 0, 0);
+    border-radius: 30px;
+    margin: 0;
+    padding: 2%;
+    box-shadow: 0 0 10px #636363;
+    text-align: left;
+    height: auto;
+    min-height: 35vh;
+    display: flex;    
+    flex-direction: column;   
+    justify-content: space-between;
+
+
+}
+
+#nova{
+    background-color:white;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #636363;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+input[type="button"] {
+    padding: 15px;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0 0 10px #636363;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #f6f6f6;
+}
+
+input[type="text"]{
+    border-radius: 10px;
+    width: 70%;
+    height: 4vh;
+}
+
+#listas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 2%;
+}
