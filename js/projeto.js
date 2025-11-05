@@ -1,11 +1,16 @@
 
-var listacores = 0;
+var listacores = 0
 
 function adicionarnota(){
     var novo
     var nota = document.getElementById("nota").value
     var selecionado = document.querySelector('input[name="urgencia"]:checked')
     var cores = ["blue", "green", "purple"]
+
+    if(nota == ""){
+        alert("O campo das notas não pode ficar vazio")
+    }
+    else{
 
     if(selecionado.value == "urg"){
         novo=document.createElement("li")
@@ -26,6 +31,7 @@ function adicionarnota(){
         div.appendChild(novo)
         document.getElementById("nota").value=""
     }
+}
 
     novo.style.color = cores[listacores]
     listacores = (listacores + 1) % cores.length
@@ -34,7 +40,13 @@ function adicionarnota(){
 
 function apagarnotanurg(){
     lista = document.getElementById("notasnurg")
+
+    if(){
+        alert("Não há nenhuma nota no campo selecionado")
+    }
+    else{
     lista.removeChild(lista.lastElementChild)
+}
 }
 
 function apagarnotaurg(){
