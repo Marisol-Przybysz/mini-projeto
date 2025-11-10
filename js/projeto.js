@@ -41,7 +41,7 @@ function adicionarnota(){
 function apagarnotanurg(){
     lista = document.getElementById("notasnurg")
 
-    if(){
+    if(!lista.lastElementChild){
         alert("Não há nenhuma nota no campo selecionado")
     }
     else{
@@ -51,18 +51,28 @@ function apagarnotanurg(){
 
 function apagarnotaurg(){
     lista = document.getElementById("notasurg")
+
+    if(!lista.lastElementChild){
+        alert("Não há nenhuma nota no campo selecionado")
+    }
+    else{
     lista.removeChild(lista.lastElementChild)
+    }
 }
 
 function apagartudo(){
     listaurg = document.getElementById("notasurg")
     listanurg = document.getElementById("notasnurg")
 
+    if(!listaurg.lastElementChild && !listanurg.lastElementChild){
+        alert("Não há nenhuma nota nos campos")
+    }
+    else{
     while(listaurg.lastElementChild){
         listaurg.lastElementChild.remove()
     }
     while(listanurg.lastElementChild){
         listanurg.lastElementChild.remove()
     }
-
+    }
 }
